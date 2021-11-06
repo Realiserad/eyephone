@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/recipient_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical" >
+    <TextView android:id="@+id/recipient_name"
+        android:textSize="18sp"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent" />
+    <TextView android:id="@+id/recipient_number"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</LinearLayout>

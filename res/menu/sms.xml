@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Action bar items -->
+    <item
+        android:id="@+id/sendSMS_action"
+        android:icon="@drawable/ic_menu_send"
+        android:showAsAction="ifRoom"
+        android:title="@string/sendSMS"/>
+    <!-- Menu items -->
+    <item
+        android:id="@+id/sendSMS"
+        android:title="@string/sendSMS"/>
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"/>
+
+</menu>

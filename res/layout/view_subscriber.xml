@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- An element in the list of subscribers -->
+
+<se.kth.nada.bastianf.eyephone.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subscriber_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp" >
+
+    <!-- Subscriber status -->
+
+    <View
+        android:id="@+id/subscriber_status"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/details_holder"
+        android:layout_alignParentLeft="true"
+        android:background="#FF0000" />
+
+    <!-- The name of the subcriber -->
+
+    <RelativeLayout
+        android:id="@id/details_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:paddingLeft="8dp" >
+
+        <TextView
+            android:id="@+id/subscriber_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:textIsSelectable="false"
+            android:textSize="26sp" />
+
+        <!-- The number of the subscriber -->
+
+        <TextView
+            android:id="@+id/subscriber_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subscriber_name"
+            android:focusable="false"
+            android:textIsSelectable="false"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- Authorized/favorite -->
+
+    <LinearLayout
+        android:id="@+id/subscriber_options"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/details_holder"
+        android:gravity="center_vertical"
+        android:focusable="false" >
+
+        <CheckBox
+            android:id="@+id/authorized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <View
+            android:id="@+id/divider_authorized"
+            android:layout_width="0.25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:focusable="false"
+            android:background="#CCC" />
+
+        <CheckBox
+            android:id="@+id/favorite"
+            style="?android:attr/starStyle"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</se.kth.nada.bastianf.eyephone.SlideLayout>
